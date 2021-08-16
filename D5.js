@@ -110,7 +110,14 @@ const onlyLetters = function(stringParameter) {
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
 */
-
+const isThisAnEmail = function(emailString) {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if(re.test(emailString)) {
+    return true
+  } else {
+    return false
+  }
+}
 /* Ex.7
    Write a function called "whatDayIsIt" that should return the current day of the week.
 */
