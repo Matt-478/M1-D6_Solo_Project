@@ -189,7 +189,7 @@ const isTodayMyBirthday = function() {
     return false
   }
 }
-console.log(isTodayMyBirthday())
+
 
 
 // JS Arrays // Objs
@@ -198,10 +198,26 @@ console.log(isTodayMyBirthday())
 /* Ex.11
    Write a function called "deleteProp" which receives an object and a string as parameters, and returns the given object after deleting its property named as the given string.
 */
+const deleteProp = function(objectParameter, stringParameter) {
+
+}
 
 /* Ex.12 
     Write a function called "olderMovie" which finds the oldest movie in the array provided at the end of this file.
 */
+
+const olderMovie = function () {
+  let oldestMovie = []
+  let oldestValue = 0
+
+  for(i=0; i < movies.length; i++) {
+    if(movies[i].year.parseInt() > oldestValue) {
+      oldestMovie = movies[i].year.parseInt()
+    } else if (movies[i].year.parseInt() === oldestMovie) {
+      oldestValue.push(oldestValue)
+    }
+  }
+}
 
 /* Ex.13
     Write a function called "countMovies" which returns the number of movies contained in the array provided at the end of this file.
