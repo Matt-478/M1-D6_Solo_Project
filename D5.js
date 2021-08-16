@@ -245,6 +245,15 @@ const onlyTheTitles = function(arr) {
 /* Ex.15
    Write a function called "onlyInThisMillennium" which returns only the movies produced in this millennium.
 */
+const onlyInThisMillennium = function(arr) {
+  arrayForTitles = []
+  for(i = 0; i< arr[i].length; i++) {
+    if(movies[i].Year >= 2001){
+      arrayForTitles.push(arr[i].Title)
+    }
+    return arrayForTitles
+  }
+}
 
 /* Ex.16 
     Write a function called "getMovieById" which receives an id as a parameter and returns the movie with the given id.
