@@ -166,9 +166,31 @@ const rollTheDices = function(timesToRoll) {
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
 */
 
+const howManyDays = function(olderDate) {
+  let currentDate =  Date.now()
+  let oldDate = new Date(olderDate)
+  let milisecondsPassed =  currentDate - oldDate 
+  const oneDay = 1000 * 60 * 60 * 24
+  let daysPassed = Math.round(milisecondsPassed / oneDay)
+  return daysPassed 
+}
+
+
+
 /* Ex.10
    Write a function called "isTodayMyBirthday" which should return true if today's your birthday, false otherwise.
 */
+const isTodayMyBirthday = function() {
+  const myBirthday = "04/08/2001"
+  const today = Date.now;
+  if (myBirthday === today) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(isTodayMyBirthday())
+
 
 // JS Arrays // Objs
 // NOTE: movies array is defined at the end of this file!
