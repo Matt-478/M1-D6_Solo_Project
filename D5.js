@@ -102,6 +102,10 @@ const deleteOne = function(stringValue, booleanValue) {
    Write a function called "onlyLetters" which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs")  => returns "I have  dogs"
 */
+const onlyLetters = function(stringParameter) {
+ return stringParameter.replace(/[0-9]/g, '');
+}
+
 
 /* Ex.6 
    Write a function called "isThisAnEmail" which receives a string as a parameter and returns true if the string is a valid email address.
