@@ -266,10 +266,23 @@ const getMovieById = function(Id) {
 /* Ex.17
     Write a function called "sumAllTheYears" which returns the sum of all the years in which the movies provided have been produced.
 */
+const sumAllTheYears = function(arr) {
+  arrayForYears = []
+  for(i = 0; i< arr[i].length; i++) {
+    let parsedNum = parseInt(arr.Year)
+    arrayForYears.push(parsedNum)
+  }
+  return arrayForYears.reduce((a, b) => a + b, 0)
+}
 
 /* Ex.18
     Write a function called "searchByTitle" which receives a string as a parameter and returns all the movies which contain that string in the title.
 */
+const searchByTitle = function (string) {
+  if(movies[i].Title.includes(string)) {
+    return movies[i].Title
+  }
+}
 
 /* Ex.19
     Write a function called "searchAndDivide" which receives a string as a parameter and returns an object;
