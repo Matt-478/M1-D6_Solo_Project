@@ -135,7 +135,6 @@ const whatDayIsIt = function() {
   return n
 }
 
-console.log(whatDayIsIt())
 
 /* Ex.8
     Write a function called "rollTheDices" which receives a number as a parameter.
@@ -147,6 +146,21 @@ console.log(whatDayIsIt())
         values: [3, 3, 4]
     }
 */
+const rollTheDices = function(timesToRoll) {
+  let mainArray = []
+  for(i=0; i<timesToRoll; i++) {
+   mainArray.push(dice())
+  }
+  console.log(mainArray)
+
+  let allValues = {
+    sum: mainArray.reduce((a, b) => a + b, 0),
+    values: mainArray
+  }
+  return allValues
+}
+
+
 
 /* Ex.9
    Write a function called "howManyDays" which receives a date as a parameter and should return the number of days passed since that date.
