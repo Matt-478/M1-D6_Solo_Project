@@ -68,6 +68,14 @@ const dice = function(){
     Write a function called "whoIsBigger" which receives 2 numbers as parameters and returns the biggest one.
 */
 
+const whoIsBigger = function(num1, num2) {
+  if(num1 > num2) {
+    return num1
+  } else {
+    return num2
+  }
+}
+
 /* Ex.3
     Write a function called "splitMe" which receives a string as a parameter and returns an array with every word in that string.
     Ex. splitMe("I love coding") => returns ["I", "Love", "Coding"]
